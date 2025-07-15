@@ -11,7 +11,6 @@ public class Task4 {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList();
 
-        // Чтение чисел из файла
         try (Scanner scanner = new Scanner(new File("C:\\Users\\progr\\IdeaProjects\\HelloPath\\src\\Task_4\\Task4.txt"))) {
             while (scanner.hasNextInt()) {
                 numbers.add(scanner.nextInt());
@@ -20,17 +19,13 @@ public class Task4 {
             System.out.println("not found: " + e.getMessage());
             return;
         }
-        // Сортировка и поиск медианы
         Collections.sort(numbers);
         int median = numbers.get(numbers.size() / 2);
 
-        // Подсчёт шагов до медианы
         int steps = 0;
         for (int num : numbers) {
             steps =steps + Math.abs(num - median);
         }
-
-        // Вывод результата
         System.out.println("min steps: " + steps);
     }
 }
