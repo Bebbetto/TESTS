@@ -1,0 +1,20 @@
+.card{
+    border-radius: 10%;
+    border: solid 10px black;
+    border-color: black;
+    text-align: center;
+    padding: 10px;
+    background-color:rgb(255, 240, 157);
+}
+
+#first{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    border-radius: 10%;
+}
+
