@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+#container {
+    margin: 200px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#calculator {
+    border: 3px solid rgb(143, 143, 143);
+    border-radius: 6%;
+    width: 99%;
+    height: 99%;
+    background-color: skyblue;
+    display: inline-block;
+}
+
+.display {
+    margin-top: 10px;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content:space-between;
+    margin-left: 3.5%;
+    padding: 10px 5px 20px 5px;
+}
+
+.string {
+    color: aliceblue;
+    width: 75%;
+    background-color: rgb(170, 170, 170);
+    border-style: none;
+    border-radius: 10%;
+    box-shadow: 0px 5px inset rgb(114, 114, 114);
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button{
+    /* border: 2px solid white; */
+    border-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 10%;
+    box-shadow: 0 7px 0 0 rgb(114, 179, 204);
+    color: rgb(107, 107, 107);
+}
+button:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+.clear_button{
+    width: 20%;
+    background-color: tomato;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0 7px 0 0 rgb(209, 85, 63);
+}
+.clear_button:hover{
+    background-color: rgb(224, 92, 69);
+}
+
+.digit_field {
+    display: inline-block;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    /* background-color: brown; */
+}
+
+.first_line {
+    width: 20%;
+    height: 40px;
+    margin: 20px 5px 5px 5px;
+}
+.second_line {
+    width: 20%;
+    height: 40px;
+    margin: 10px 5px 5px 5px;
+}
+.third_line {
+    width: 20%;
+    height: 40px;
+    margin: 10px 5px 5px 5px;
+}
+.fourth_line {
+    width: 20%;
+    height: 40px;
+    margin: 10px 5px 5px 5px;
+}
+#equal {
+    background-color: rgba(196, 247, 120);
+}
+
+#math {
+    background-color: rgb(253, 253, 208);
+    border-radius: 50%;
+}
+#math:hover {
+    background-color: rgb(185, 185, 154);
+}
